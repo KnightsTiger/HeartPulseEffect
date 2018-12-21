@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <pl.bclogic.pulsator4droid.library.PulsatorLayout
+        android:id="@+id/pulsator"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:pulse_count="25"
+        app:pulse_duration="500"
+        app:pulse_repeat="0"
+        app:pulse_color="@color/colorPulse"
+        app:pulse_startFromScratch="false"
+        app:pulse_interpolator="Accelerate">
+    </pl.bclogic.pulsator4droid.library.PulsatorLayout>
+
+</android.support.constraint.ConstraintLayout>
